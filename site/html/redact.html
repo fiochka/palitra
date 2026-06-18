@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <title>Palitra — Редактирование профиля</title>
+    <link rel="icon" href="image/logo.svg">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="glavnaya.html">
+                <img class="logo" src="image/logo.svg" alt="logo">
+            </a>
+            <input class="search" type="text" placeholder="поиск">
+            <nav class="nav">
+                <a href="glavnaya.html">Главная</a>
+                <a href="profil.html">Профиль</a>
+                <a href="podpiska.html">Подписка</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-head">
+            <h2>Редактирование профиля</h2>
+            <p>Измени информацию о себе и сохрани</p>
+        </section>
+
+        <div class="panel">
+            <form class="edit-form" action="profil.html">
+                <label>Имя</label>
+                <input type="text" name="name" value="Madoka" required>
+
+                <label>Ник</label>
+                <input type="text" name="handle" value="@Madoka123" required>
+
+                <label>О себе</label>
+                <textarea name="about" rows="4">Привет! Люблю кино и аниме. Здесь собираю всё что мне нравится и ищу новых друзей по интересам</textarea>
+
+                <label>Интересы (через запятую)</label>
+                <input type="text" name="interests" value="аниме, кино, манга, музыка, арт">
+
+                <label>Аватар (ссылка)</label>
+                <input type="text" name="avatar" value="https://i.pinimg.com/originals/a4/45/24/a445243acf7ae971e3b1eaf0344630a5.jpg">
+
+                <label>Обложка (ссылка)</label>
+                <input type="text" name="cover" value="https://i.pinimg.com/originals/00/86/bb/0086bbbbfcf73ca9367941a6a782a88c.webp">
+                <label>Фильм (ссылка)</label>
+                <input type="text" name="cover" value="https://www.kinopoisk.ru/film/326/posters/">
+                <label>Музыка (ссылка)</label>
+                <input type="text" name="cover" value="https://i.pinimg.com/originals/00/86/bb/0086bbbbfcf73ca9367941a6a782a88c.webp">
+                <label>Книга (ссылка)</label>
+                <input type="text" name="cover" value="https://cdn.litres.ru/pub/c/cover_415/73740473">
+
+
+
+                <div class="field-row">
+                    <div>
+                        <label>Telegram</label>
+                        <input type="text" name="tg" placeholder="@username">
+                    </div>
+                    <div>
+                        <label>VK</label>
+                        <input type="text" name="vk" placeholder="vk.com/...">
+                    </div>
+                    <div>
+                        <label>Pinterest</label>
+                        <input type="text" name="tg" placeholder="@username">
+                    </div>
+                    <div>
+                        <label>TikTok</label>
+                        <input type="text" name="vk" placeholder="vk.com/...">
+                    </div>
+                </div>
+
+                <div class="edit-actions">
+                    <a class="btn-cancel" href="profil.html">Отмена</a>
+                    <button type="submit">Сохранить</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
+
